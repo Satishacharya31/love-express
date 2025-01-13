@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.absolute.right-0.mt-2.w-48.bg-white.rounded-md.shadow-lg.py-1.z-10 button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.absolute.right-0.mt-2.w-48.bg-white.rounded-md.shadow-lg.py-1.z-10 button:hover {
+  background-color: #f5f5f5;
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-beat {
+  animation: heart-beat 1s infinite;
+}
